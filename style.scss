@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&family=Open+Sans&display=swap');
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    font-family: 'Archivo Black', sans-serif;
+    margin: 20px 0;
+}
+
+h3 {
+    font: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 20px 0;
+}
+
+body {
+    background-color: #F5F5DC;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.prod-card {
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	width: 100%;
+	max-width: 1200px;
+    background-color: #FFF;
+	box-shadow: 10px 15px 50px rgba(0, 0, 0, 0.3);
+	border-radius: 6px;
+    overflow: hidden;
+	.left-panel {
+		width: 100%;
+		background-image: url(/images/image-product-desktop.jpg);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.right-panel {
+		text-align: left;
+		padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        
+        .price {
+            margin: 0 0 20px;
+        }
+
+        span {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 60px;
+            font-family: 'Archivo Black', sans-serif;
+
+            &:last-child {
+                font-size: 24px;
+                font-weight: normal;
+                line-height: 24px;
+                font-family: 'Open Sans';
+                text-decoration: line-through;
+            }
+
+        }
+
+        a {
+            padding: 20px 0;
+            background-color: #006E33;
+            text-align: center;
+            width: 100%;
+            color: #FFF;
+            text-decoration: none;
+            border-radius: 6px;
+
+            &:hover {
+                color: #FFF;
+            }
+
+        }
+
+	}
+}
